@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum Vitae - Christian Embang Mou</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: #f4f8fb;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+      .cv-container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        padding: 32px 24px;
+        display: flex;
+        gap: 32px;
+      }
+      .cv-left {
+        flex: 1.2;
+        padding-right: 24px;
+        border-right: 2px solid #eee;
+      }
+      .cv-right {
+        flex: 1;
+        padding-left: 24px;
+      }
+      .cv-photo {
+        width: 180px;
+        border-radius: 8px;
+        border: 4px solid #e74c3c;
+        margin-bottom: 18px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background: #fff;
+      }
+      .cv-name {
+        text-align: center;
+        font-size: 2.2em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 18px;
+      }
+      .cv-section {
+        margin-bottom: 28px;
+      }
+      .cv-section h2 {
+        font-size: 1.15em;
+        letter-spacing: 1px;
+        color: #222;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      .cv-section ul,
+      .cv-section li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .cv-section ul {
+        margin-left: 0;
+      }
+      .cv-section li {
+        margin-bottom: 6px;
+      }
+      .cv-section p {
+        margin: 0 0 8px 0;
+        color: #222;
+      }
+      .cv-contact {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+        color: #222;
+      }
+      .cv-contact i {
+        font-size: 1.1em;
+        color: #007bff;
+      }
+      .cv-list {
+        margin-left: 18px;
+      }
+      .cv-keahlian,
+      .cv-kesukaan {
+        margin-bottom: 12px;
+      }
+      @media (max-width: 900px) {
+        .cv-container {
+          flex-direction: column;
+          padding: 18px 6px;
+        }
+        .cv-left,
+        .cv-right {
+          padding: 0;
+          border: none;
+        }
+      }
+      /* Tombol Kembali */
+      .btn-back {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        text-align: center;
+        width: fit-content;
+        transition: 0.3s;
+      }
+      .btn-back:hover {
+        background: #2980b9;
+      }
+      /* Galeri Foto */
+      .gallery-section {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+      .gallery-section h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 30px;
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+      .gallery-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      }
+      .gallery-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="cv-left">
+        <img
+          src="poto/hm/Christian Embang Mou.jpeg"
+          alt="Foto Profil"
+          class="cv-photo"
+        />
+        <div class="cv-name">CHRISTIAN EMBANG MOU</div>
+        <div class="cv-section">
+          <h2>TENTANG SAYA</h2>
+          <p>
+            Nama saya Christian Embang Mou, saya lulusan SMK tahun 2024. Saya
+            ingin mencari pengalaman kerja baru agar bisa mengembangkan diri
+            saya. Saya mampu mengoperasikan komputer (Ms.Word, Power Point,
+            Canva,dll) secara efisien. Saya dapat beradaptasi dengan cepat
+            terhadap lingkungan baru dan suka terhadap interaksi dengan orang
+            lain.
+          </p>
+        </div>
+        <div class="cv-section">
+          <h2>PENGALAMAN</h2>
+          <ul class="cv-list">
+            <li><b>2023</b> - Karyawan Toko IceCream, Nero IceCream</li>
+            <li>
+              <b>2025 - 2026</b> - Koordinator Lapangan Acara Penerimaan
+              Mahasiswa Baru Pendidikan Komputer
+            </li>
+            <li><b>2025 - 2026</b> - Menjadi Driver Maxim</li>
+          </ul>
+        </div>
+        <div class="cv-section">
+          <h2>KONTAK</h2>
+          <div class="cv-contact"><i class="fa fa-phone"></i> 085751947319</div>
+          <div class="cv-contact">
+            <i class="fa fa-envelope"></i> christianembangmout@gmail.com
+          </div>
+          <div class="cv-contact">
+            <i class="fa fa-instagram"></i> @tian_emouu
+          </div>
+        </div>
+      </div>
+      <div class="cv-right">
+        <div class="cv-section">
+          <h2>KEPRIBADIAN</h2>
+          <div class="cv-contact">
+            <i class="fa fa-user"></i> Ekstrovert, mudah bergaul, dan suka
+            berinteraksi dengan orang lain.
+          </div>
+        </div>
+        <div class="cv-section">
+          <h2>PENDIDIKAN</h2>
+          <ul class="cv-list">
+            <li>
+              SD Negeri 025 Tarakan <span style="float: right">2013-2018</span>
+            </li>
+            <li>
+              SMP Negeri 2 Malinau <span style="float: right">2018-2021</span>
+            </li>
+            <li>
+              SMK Negeri 1 Malinau<span style="float: right">2021-2024</span>
+            </li>
+          </ul>
+          <br />
+          <b>2021-2024</b><br />
+          <b>SMK NEGERI 1 MALINAU</b><br />
+          Jurusan Multimedia<br />
+          Nilai Rata-Rata: 8.5
+        </div>
+        <div class="cv-section cv-kesukaan">
+          <h2>KESUKAAN</h2>
+          <ul class="cv-list">
+            <li>Menonton film</li>
+            <li>Mancing</li>
+          </ul>
+        </div>
+        <div class="cv-section cv-keahlian">
+          <h2>KEAHLIAN</h2>
+          <ul class="cv-list">
+            <li>mencairkan suasana</li>
+            <li>Public Speaking</li>
+            <li>Kerapian & kebersihan</li>
+            <li>Komunikasi</li>
+            <li>Kerja sama</li>
+            <li>Cepat beradaptasi</li>
+            <li>Disiplin</li>
+            <li>Kerja keras</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- GALERI FOTO -->
+    <div class="gallery-section">
+      <h2>📸 Galeri Saya</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="poto/hm/1.jpeg" alt="Foto 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/2.jpeg" alt="Foto 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/3.jpeg" alt="Foto 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/5.jpeg" alt="Foto 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/6.jpeg" alt="Foto 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/7.jpeg" alt="Foto 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/8.jpeg" alt="Foto 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/11.jpeg" alt="Foto 8" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/12.jpeg" alt="Foto 9" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/13.jpeg" alt="Foto 10" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/14.jpeg" alt="Foto 11" />
+        </div>
+        <div class="gallery-item">
+          <img src="poto/hm/15.jpeg" alt="Foto 12" />
+        </div>
+      </div>
+    </div>
+
+    <!-- BUTTON KEMBALI -->
+    <a href="index.html" class="btn-back">⬅ ke Beranda</a>
+  </body>
+</html>
